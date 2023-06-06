@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 5rem;
+  background-image: url("./img/bg.jpg");
+  color: #fff;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0 10000px inset;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.main-wrapper {
+  max-width: 65rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5rem;
+}
+
+form div {
+  padding: 1.5rem 0;
+}
+
+form div label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+form div input {
+  height: 5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+
+form div button {
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+}
+
+form ul {
+  list-style: none;
+}
+
+form ul li {
+  color: rgb(240, 33, 33);
+  font-size: 1.8rem;
+}
+
+.no-acc-register {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.no-acc-register button {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.no-acc-register p {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-modal {
+  display: none;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+  max-width: 65rem;
+  margin: auto;
+  padding: 5rem;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.custom-modal button#closeModal {
+  height: 2rem;
+  width: 2rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+}
+
+.inner-container {
+  border: 1px solid green;
+  padding: 1.5rem;
+}
+
+.inner-container.left-side {
+  text-align: center;
+}
+
+.inner-container img.profile {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 5px solid white;
+  margin-bottom: 2rem;
+}
+
+.inner-container.right-side form {
+  display: flex;
+  height: 10rem;
+}
+
+.inner-container.right-side form textarea {
+  width: 85%;
+  border: 0;
+  padding: 1rem;
+  resize: none;
+  outline-color: green;
+}
+
+.inner-container.right-side form button {
+  border: 0;
+  width: 15%;
+}
+
+#deleteProfile {
+  border: 2px solid red;
+  color: red;
+  padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post {
+  background-color: #eaeaea;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  color: #000;
+}
+
+#allPostsWrapper .single-post .post-content {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+#allPostsWrapper .single-post .post-actions {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+
+#allPostsWrapper .single-post .post-actions div button.like-btn {
+  background-image: url("./img/like.png");
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.comment-btn {
+  background-image: url("./img/comment.png");
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.remove-btn {
+  border-color: red;
+  color: red;
+  padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form {
+  height: 3rem;
+  margin-top: 1.5rem;
+}
+
+#allPostsWrapper .single-post .post-comments form input {
+  width: 85%;
+  padding: 0 1rem;
+}
+
+#allPostsWrapper .single-post .post-comments form button {
+  width: 15%;
+  background-color: grey;
+}
+
+#allPostsWrapper .single-post .post-comments {
+  display: none;
+}
+
+#allPostsWrapper .single-post .post-comments .single-comment {
+  border: 1px dotted green;
+  padding: 1rem;
+  margin-top: 1rem;
+}
